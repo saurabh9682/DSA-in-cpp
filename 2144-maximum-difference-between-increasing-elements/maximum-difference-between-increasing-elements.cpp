@@ -6,7 +6,7 @@ public:
         for(int i=1;i<nums.size();i++){
             int diff=nums[i]-minelement;
             if(diff>0){
-                ans=max(ans,diff);//as negativeme chota numbers bade hote hai so isiliye
+                ans=max(ans,diff);//>0 tabhi return karega warna -1 return karega
             }
             minelement=min(minelement,nums[i]);
         }
