@@ -8,7 +8,7 @@ public:
         /*Kya ye frequencies repeat ho rahi hain?Iske liye ek aur unordered_set use karenge.*/
         unordered_set<int>st;
         for(auto x:mp){
-            if(st.count(x.second)){
+            if(st.count(x.second)){//x.second means ki as we need to check for value not key
                 return false;
             }
             st.insert(x.second);
