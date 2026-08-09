@@ -16,3 +16,49 @@ public:
         return true;
     }
 };
+
+
+
+
+
+
+/*class Solution {
+public:
+    bool uniqueOccurrences(vector<int>& arr) {
+
+        unordered_map<int, int> mp;
+
+        // Step 1: frequency count
+        for(int i = 0; i < arr.size(); i++) {
+            mp[arr[i]]++;
+        }
+
+        // Step 2: frequencies ko vector mein store karo
+        vector<int> freq;
+
+        // HashMap ke elements ko access karne ke liye
+        // array ke elements se loop chala rahe hain
+        for(int i = 0; i < arr.size(); i++) {
+
+            if(mp[arr[i]] != 0) {
+
+                freq.push_back(mp[arr[i]]);
+
+                mp[arr[i]] = 0;
+            }
+        }
+
+        // Step 3: duplicate frequencies check karo
+        for(int i = 0; i < freq.size(); i++) {
+
+            for(int j = i + 1; j < freq.size(); j++) {
+
+                if(freq[i] == freq[j]) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+};*/
