@@ -11,6 +11,6 @@ class Solution {
                 right=mid;
             }
         }
-        return left;
+        return left;   //Hum left aur right ko move karte-karte peak ke ek hi index par le aate hain; jab left == right, wahi peak hai → return left.
     }
 }
