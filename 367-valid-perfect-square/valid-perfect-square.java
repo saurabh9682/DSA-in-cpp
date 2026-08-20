@@ -14,10 +14,8 @@ Search khatam ho gaya aur exact square nahi mila → false.*/
         int right=num;
         while(left<=right){
             int mid=left+(right-left)/2;
-            if(mid==num/mid){
-                if(mid*mid==num){
-                    return true;
-                }
+            if(mid==num/mid&&num%mid==0){
+                return true;
             }
             if(mid<num/mid){
                 left=mid+1;
