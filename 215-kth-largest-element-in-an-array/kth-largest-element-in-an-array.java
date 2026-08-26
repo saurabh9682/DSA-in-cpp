@@ -1,4 +1,4 @@
-
+//as question says without sorting se karna hai 
 
 import java.util.*;
 class Solution {
