@@ -18,7 +18,8 @@ class Solution {
                 int size=q.size();
                 List<Integer>temp=new ArrayList<>();
                 while(size-->0){
-                    TreeNode node=q.remove();temp.add(node.val);
+                    TreeNode node=q.remove();// yani front weaala elent bahar nikle
+                    temp.add(node.val);
                     if(node.left!=null){
                         q.add(node.left);
                     }
