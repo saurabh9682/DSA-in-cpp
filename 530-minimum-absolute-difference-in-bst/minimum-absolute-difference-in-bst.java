@@ -18,7 +18,7 @@ class Solution {
    int ans=Integer.MAX_VALUE;
  public int getMinimumDifference(TreeNode root) {
         inorder(root);
-        return ans;
+        return Math.abs(ans);
     }
     public void inorder(TreeNode root){
         if (root==null){
